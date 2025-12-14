@@ -4,11 +4,14 @@ import lombok.AllArgsConstructor;
 import uk.co.jlsigntech.interpreterbookingportalservice.domain.model.Booking;
 import uk.co.jlsigntech.interpreterbookingportalservice.domain.model.request.UpdateDateRequest;
 import uk.co.jlsigntech.interpreterbookingportalservice.domain.port.in.BookingService;
+import uk.co.jlsigntech.interpreterbookingportalservice.domain.port.out.BookingRepository;
 
 import java.util.UUID;
 
 @AllArgsConstructor
 public class BookingServiceImpl implements BookingService {
+
+    private final BookingRepository bookingRepository;
 
     @Override
     public void createBooking() {

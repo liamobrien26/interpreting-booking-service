@@ -10,9 +10,9 @@ public interface PreferredInterpreterService {
 
     boolean doesInterpreterNameExists(String preferredInterpreterName);
 
-    void addPreferredInterpreter(PreferredInterpreterRequest preferredInterpreterRequest);
+    void addPreferredInterpreterName(PreferredInterpreterRequest preferredInterpreterRequest);
 
-    List<Interpreter> getAllPreferredInterpreters();
+    List<Interpreter> getAllPreferredInterpreterNames();
 
-    void removePreferredInterpreter(UUID interpreterId);
+    void deletePreferredInterpreterName(UUID interpreterId);
 }

@@ -10,7 +10,8 @@ import java.util.UUID;
 @Repository
 public interface PreferredInterpreterRepository {
 
-    void deletePreferredInterpretersById(UUID interpreterId);
+    void deletePreferredInterpreterById(UUID interpreterId);
+
     void save(PreferredInterpreterRequest preferredInterpreterRequest);
 
     List<Interpreter> findAll();
