@@ -135,7 +135,7 @@ public class AccountResourceImplTest {
                 "Harry potter",
                 "Ron Weasley",
                 "harrypotter@gov.uk",
-                "wrongpassword123");
+                "wrongPPassword123");
 
         accountService.register(mockedUser);
         Optional<User> usersRegistered = accountRepository.findByEmail(mockedUser.email());
